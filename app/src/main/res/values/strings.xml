@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WholeZen</string>
+    <string name="intro">“Living 24 hours with mindfulness is more worthwhile than living 100 years without it.”   - Buddha</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+    <string name="wholezen">WholeZen</string>
+    <string name="meditate">Meditate</string>
+    <string name="soothing">Soothing Bedtime Stories To Help You Fall into Deep Natural Sleep</string>
+    <string name="mine">Mine</string>
+    <string name="kids">Kids</string>
+    <string name="angry">Angry</string>
+    <string name="sleep">Sleep</string>
+    <string name="anxious">Anxious</string>
+    <string name="all">All</string>
+    <string name="daily_calm">Daily Calm</string>
+    <string name="daily_calmness">Start Your Day with Daily Calmness</string>
+    <string name="life_is_too_short_to_cry_about">Life is too short to cry about</string>
+    <string name="name">Abby!</string>
+    <string name="check_in">Check In</string>
+    <string name="set">Set</string>
+    <string name="let_s_check_in">Let\'s Check In!</string>
+    <string name="select_day_and_time">Select Day And Time</string>
+    <string name="date_and_day">Date And Day</string>
+    <string name="begin_check_in">Begin Check In</string>
+</resources>
