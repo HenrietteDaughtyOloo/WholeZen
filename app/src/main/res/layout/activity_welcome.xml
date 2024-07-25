@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeActivity">
+    tools:context=".activies.WelcomeActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/ivIntroImage"
@@ -32,32 +32,14 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/tvIntroWords"
-        android:layout_width="401dp"
-        android:layout_height="196dp"
-        android:layout_marginBottom="152dp"
-        android:fontFamily="@font/comiiingsoonregular"
-        android:text="@string/intro"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivIntroImage"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
         android:id="@+id/tvAppName"
         android:layout_width="232dp"
         android:layout_height="44dp"
-        android:layout_marginTop="336dp"
+        android:layout_marginTop="308dp"
         android:fontFamily="@font/comiiingsoonregular"
         android:text="@string/wholezen"
         android:textColor="@color/black"
+        android:textAlignment="center"
         android:textSize="35sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,21 +47,110 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <HorizontalScrollView
+        android:id="@+id/tvIntroWords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppName">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tvIntroWords1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/comiiingsoonregular"
+                    android:maxLines="6"
+                    android:padding="10dp"
+                    android:text="@string/essentials"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvIntroWords2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/comiiingsoonregular"
+                    android:maxLines="6"
+                    android:padding="10dp"
+                    android:text="@string/essentials"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvIntroWords3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/comiiingsoonregular"
+                    android:maxLines="6"
+                    android:padding="10dp"
+                    android:text="@string/essentials"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="normal" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
     <Button
         android:id="@+id/btnGetSTarted"
         android:layout_width="273dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="68dp"
+        android:layout_marginTop="60dp"
         android:width="225sp"
         android:height="10sp"
         android:backgroundTint="@color/primary"
         android:text="@string/get_started"
         android:textSize="20sp"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvIntroWords"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/tvIntroWords" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

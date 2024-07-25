@@ -13,25 +13,25 @@
         android:theme="@style/Theme.WholeZen"
         tools:targetApi="31">
         <activity
-            android:name=".SetActivity"
+            android:name=".activies.SetActivity"
             android:exported="false" />
         <activity
-            android:name=".ReflectActivity"
+            android:name=".activies.ReflectActivity"
             android:exported="false" />
         <activity
-            android:name=".CHeckInActivity"
+            android:name=".activies.CHeckInActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeBackActivity"
+            android:name=".activies.WelcomeBackActivity"
             android:exported="false" />
         <activity
-            android:name=".MeditateActivity"
+            android:name=".activies.MeditateActivity"
             android:exported="false" />
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".activies.WelcomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activies.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

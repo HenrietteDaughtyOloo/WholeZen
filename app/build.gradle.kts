@@ -49,6 +49,8 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation (libs.lottie)
-//    implementation(libs.philjay)
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.github.AnyChart:AnyChart-Android:1.1.5")
+
 
 }

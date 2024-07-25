@@ -1,4 +1,4 @@
-package com.henriette.wholezen
+package com.henriette.wholezen.activies
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.henriette.wholezen.R
 import com.henriette.wholezen.databinding.ActivityWelcomeBackBinding
 
 class WelcomeBackActivity : AppCompatActivity() {
@@ -25,17 +26,22 @@ class WelcomeBackActivity : AppCompatActivity() {
 
 
         binding.btnCheckIn.setOnClickListener {
-            val intent = Intent(this,CHeckInActivity::class.java)
+            val intent = Intent(this, CHeckInActivity::class.java)
             startActivity(intent)
             finish()
         }
         binding.btnReflect.setOnClickListener {
-            val intent = Intent(this,ReflectActivity::class.java)
+            val intent = Intent(this, ReflectActivity::class.java)
             startActivity(intent)
             finish()
         }
         binding.btnSet.setOnClickListener {
-            val intent = Intent(this,SetActivity::class.java)
+            val intent = Intent(this, SetActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        binding.fabHome.setOnClickListener{
+            val intent = Intent(this, MeditateActivity::class.java)
             startActivity(intent)
             finish()
         }

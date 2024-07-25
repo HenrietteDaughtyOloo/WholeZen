@@ -5,25 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeBackActivity">
+    tools:context=".activies.WelcomeBackActivity">
 
-    <ImageView
-        android:id="@+id/appLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.014"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
     <TextView
         android:id="@+id/tvWelcomeAbby"
         android:layout_width="wrap_content"
         android:layout_height="64dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/comiiingsoonregular"
-        android:text="Welcome Back,"
+        android:text="Welcome Back ,"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/black"
@@ -36,8 +26,9 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="163dp"
-        android:layout_height="54dp"
+        android:layout_width="95dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="4dp"
         android:fontFamily="@font/comiiingsoonregular"
         android:text="@string/name"
         android:textAlignment="textStart"
@@ -47,14 +38,14 @@
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/tvWelcomeAbby"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvWelcomeAbby" />
+        app:layout_constraintStart_toEndOf="@+id/tvWelcomeAbby"
+        app:layout_constraintTop_toTopOf="@+id/tvWelcomeAbby"
+        app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardPlayCheckIn"
-        android:layout_width="00dp"
-        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:cardBackgroundColor="#715672"
         app:cardCornerRadius="20dp"
@@ -69,15 +60,15 @@
             android:padding="16dp">
 
             <ImageView
-                android:layout_width="200dp"
                 android:id="@+id/ivCheckInPic"
-                android:layout_height="130dp"
+                android:layout_width="150dp"
+                android:layout_height="105dp"
                 app:srcCompat="@drawable/checkin" />
 
             <Button
                 android:id="@+id/btnCheckIn"
-                android:layout_width="150dp"
-                android:layout_height="54dp"
+                android:layout_width="117dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="45dp"
                 android:backgroundTint="@color/green"
                 android:text="@string/check_in"
@@ -154,13 +145,29 @@
                 android:layout_marginTop="45dp"
                 android:backgroundTint="@color/green"
                 android:text="@string/set"
+                android:textAlignment="center"
                 android:textSize="20sp"
                 app:cornerRadius="15dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="79dp"
+        android:layout_height="57dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
-
+    <ImageView
+        android:id="@+id/fabHome"
+        android:layout_width="56dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/hoome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
